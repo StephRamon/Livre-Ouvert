@@ -1,0 +1,376 @@
+-- Base de données :  `a_livre_ouvert`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `auteur`
+--
+
+CREATE TABLE `auteur` (
+  `auteur_pk` int(11) NOT NULL,
+  `auteur_nom` text NOT NULL,
+  `auteur_prenom` text NOT NULL,
+  `auteur_sexe` text NOT NULL,
+  `auteur-epoque-fk` int(11) NOT NULL,
+  `auteur-naissance` int(4) DEFAULT NULL,
+  `auteur-deces` int(4) DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=54 DEFAULT CHARSET=utf8;
+
+--
+-- Contenu de la table `auteur`
+--
+
+INSERT INTO `auteur` (`auteur_pk`, `auteur_nom`, `auteur_prenom`, `auteur_sexe`, `auteur-epoque-fk`, `auteur-naissance`, `auteur-deces`) VALUES
+(1, 'Chrétien de Troyes', '', 'Masculin', 1, 0, 1190),
+(2, 'Béroul', '', 'Masculin', 1, NULL, 1160),
+(3, 'Rutebeuf', '', 'Masculin', 1, NULL, 1285),
+(4, 'D''Orléans', 'Charles', 'Masculin', 1, 1394, 1465),
+(5, 'Villon', 'François', 'Masculin', 1, NULL, NULL),
+(6, 'Marot', 'Clément', 'Masculin', 2, 1496, 1544),
+(7, 'Rabelais', 'François', 'Masculin', 2, NULL, 1553),
+(8, 'Labé', 'Louise', 'Féminin', 2, 1524, 1566),
+(9, 'Montaigne', 'Michel', 'Masculin', 2, 1533, 1592),
+(10, 'de Viau', 'Théophile', 'Masculin', 3, 1590, 1626),
+(11, 'Malherbe', 'François', 'Masculin', 3, 1555, 1628),
+(12, 'Corneille', 'Pierre', 'Masculin', 3, 1606, 1684),
+(13, 'Molière', '', 'Masculin', 4, 1622, 1673),
+(14, 'La Fontaine', 'Jean', 'Masculin', 4, 1621, 1695),
+(15, 'Racine', 'Jean', 'Masculin', 4, 1639, 1699),
+(16, 'de Sévigné', 'Marie', 'Féminin', 4, 1626, 1696),
+(17, 'de Lafayette', 'Marie-Madeleine', 'Féminin', 4, 1634, 1693),
+(18, 'Perrault', 'Charles', 'Masculin', 4, 1628, 1703),
+(19, 'de Montesquieu', 'Charles-Louis', 'Masculin', 5, 1689, 1755),
+(20, 'de Marivaux', 'Pierre', 'Masculin', 5, 1688, 1763),
+(21, 'Voltaire', '', 'Masculin', 5, 1694, 1778),
+(22, 'Diderot', 'Denis', 'Masculin', 6, 1713, 1784),
+(23, 'Rousseau', 'Jean-Jacques', 'Masculin', 6, 1712, 1778),
+(24, 'de Beaumarchais', 'Pierre Augustin', 'Masculin', 6, 1732, 1798),
+(25, 'Choderlos de Laclos', 'Pierre', 'Masculin', 6, 1747, 1803),
+(26, 'de Sade', 'Donation Alphonse François', 'Masculin', 6, 1740, 1814),
+(27, 'de Chateaubriand', 'François-René', 'Masculin', 7, 1768, 1848),
+(28, 'de Staël', 'Germaine', 'Féminin', 7, 1766, 1817),
+(29, 'de Lamartine', 'Alphonse', 'Masculin', 7, 1790, 1869),
+(30, 'de Balzac', 'Honoré', 'Masculin', 7, 1799, 1850),
+(31, 'Stendhal', '', 'Masculin', 7, 1783, 1842),
+(32, 'Hugo', 'Victor', 'Féminin', 7, 1802, 1885),
+(33, 'de Nerval', 'Gérard', 'Masculin', 8, 1808, 1855),
+(34, 'de Vigny', 'Alfred', 'Masculin', 8, 1797, 1863),
+(35, 'de Musset', 'Alfred', 'Masculin', 8, 1810, 1857),
+(36, 'Sue', 'Eugène', 'Masculin', 8, 1804, 1857),
+(37, 'Dumas', 'Alexandre', 'Masculin', 8, 1802, 1870),
+(38, 'Mérimée', 'Prosper', 'Masculin', 8, 1803, 1870),
+(39, 'Sand', 'George', 'Féminin', 8, 1804, 1876),
+(40, 'Labiche', 'Eugène', 'Masculin', 8, 1815, 1888),
+(41, 'Baudelaire', 'Charles', 'Masculin', 8, 1821, 1867),
+(42, 'Flaubert', 'Gustave', 'Masculin', 8, 1821, 1880),
+(43, 'Verlaine', 'Paul', 'Masculin', 8, 1844, 1896),
+(44, 'Rimbaud', 'Arthur', 'Masculin', 8, 1854, 1891),
+(45, 'Zola', 'Émile', 'Masculin', 8, 1840, 1902),
+(46, 'Vernes', 'Jules', 'Masculin', 8, 1828, 1905),
+(47, 'de Maupassant', 'Guy', 'Masculin', 8, 1850, 1893),
+(48, 'Mallarmé', 'Stéphane', 'Masculin', 8, 1842, 1898),
+(49, 'Renard', 'Jules', 'Masculin', 8, 1864, 1910),
+(50, 'Proust', 'Marcel', 'Masculin', 9, 1871, 1922),
+(51, 'Apollinaire', 'Guillaume', 'Masculin', 9, 1880, 1918),
+(52, 'Alain-Fournier', '', 'Masculin', 9, 1886, 1914),
+(53, 'Bernanos', 'Georges', 'Masculin', 9, 1888, 1948);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `epoque`
+--
+
+CREATE TABLE `epoque` (
+  `epoque_pk` int(11) NOT NULL,
+  `epoque_dates` text NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+
+--
+-- Contenu de la table `epoque`
+--
+
+INSERT INTO `epoque` (`epoque_pk`, `epoque_dates`) VALUES
+(1, '500-1500'),
+(2, '1500-1600'),
+(3, '1600-1650'),
+(4, '1650-1700'),
+(5, '1700-1750'),
+(6, '1750-1800'),
+(7, '1800-1850'),
+(8, '1850-1900'),
+(9, '1900-1950');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `genre_litteraire`
+--
+
+CREATE TABLE `genre_litteraire` (
+  `genre_pk` int(11) NOT NULL,
+  `genre_nom` text NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+
+--
+-- Contenu de la table `genre_litteraire`
+--
+
+INSERT INTO `genre_litteraire` (`genre_pk`, `genre_nom`) VALUES
+(1, 'Genre poétique'),
+(2, 'Genre narratif'),
+(3, 'Genre théâtral'),
+(4, 'Genre épistolaire'),
+(5, 'Genre argumentatif'),
+(6, 'Genre descriptif'),
+(7, 'non-précisé');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `livre`
+--
+
+CREATE TABLE `livre` (
+  `livre_pk` int(11) NOT NULL,
+  `livre_titre` text NOT NULL,
+  `livre_auteur_fk` int(11) NOT NULL,
+  `livre_epoque_fk` int(11) NOT NULL,
+  `livre_genre_litteraire_fk` int(11) NOT NULL,
+  `livre_sous_genre_litteraire_fk` int(11) NOT NULL,
+  `livre_registre_litteraire_fk` int(11) DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+
+--
+-- Contenu de la table `livre`
+--
+
+INSERT INTO `livre` (`livre_pk`, `livre_titre`, `livre_auteur_fk`, `livre_epoque_fk`, `livre_genre_litteraire_fk`, `livre_sous_genre_litteraire_fk`, `livre_registre_litteraire_fk`) VALUES
+(1, 'Perceval ou le Conte du Graal', 1, 1, 2, 23, 1),
+(2, 'Lancelot ou le Chevalier de la Charette', 1, 1, 2, 23, 1),
+(3, 'Tristan et Iseut', 2, 1, 2, 23, 1),
+(7, 'Ballade des Pendus', 5, 1, 1, 1, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `sous_genre_litteraire`
+--
+
+CREATE TABLE `sous_genre_litteraire` (
+  `sous_genre_pk` int(11) NOT NULL,
+  `sous_genre_nom` text NOT NULL,
+  `sous_genre_genre_litt_fk` int(11) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8;
+
+--
+-- Contenu de la table `sous_genre_litteraire`
+--
+
+INSERT INTO `sous_genre_litteraire` (`sous_genre_pk`, `sous_genre_nom`, `sous_genre_genre_litt_fk`) VALUES
+(1, 'ballade', 1),
+(2, 'calligramme', 1),
+(3, 'chanson', 1),
+(4, 'chant royal', 1),
+(5, 'élegie', 1),
+(6, 'épigramme', 1),
+(7, 'épopée', 1),
+(8, 'fable', 1),
+(9, 'fatrasie', 1),
+(10, 'haïku', 1),
+(11, 'lai', 1),
+(12, 'miscellanées', 1),
+(13, 'motet', 1),
+(14, 'ode', 1),
+(15, 'pastourelle', 1),
+(16, 'poésie en prose', 1),
+(17, 'oaristys', 1),
+(18, 'rondeau', 1),
+(19, 'triolet', 1),
+(20, 'sextine', 1),
+(21, 'sonnet', 1),
+(22, 'virelai', 1),
+(23, 'roman', 2),
+(24, 'biographie', 2),
+(25, 'conte', 2),
+(26, 'épopée', 2),
+(27, 'nouvelle', 2),
+(28, 'tragédie', 3),
+(29, 'comédie', 3),
+(30, 'tragicomédie', 3),
+(31, 'sotie', 3),
+(32, 'farce', 3),
+(33, 'moralité', 3),
+(34, 'drame', 3),
+(35, 'miracle', 3),
+(36, 'mystère', 3),
+(37, 'proverbe', 3),
+(38, 'lettre', 4),
+(39, 'épître', 4),
+(40, 'essai', 5),
+(41, 'apologue', 5),
+(42, 'pamphlet', 5),
+(43, 'livre de référence', 5),
+(44, 'sermon', 5),
+(45, 'parodie', 5),
+(46, 'portrait', 5),
+(47, 'pensées', 6),
+(48, 'non-précisé', 7);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `sous_registre_litteraire`
+--
+
+CREATE TABLE `sous_registre_litteraire` (
+  `registre_pk` int(11) NOT NULL,
+  `registre_nom` text NOT NULL,
+  `registre_sous_genre_fk` int(11) DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8;
+
+--
+-- Contenu de la table `sous_registre_litteraire`
+--
+
+INSERT INTO `sous_registre_litteraire` (`registre_pk`, `registre_nom`, `registre_sous_genre_fk`) VALUES
+(1, 'roman courtois', 23),
+(2, 'roman historique', 23),
+(3, 'roman épistolaire', 23),
+(4, 'roman-mémoires', 23),
+(5, 'roman d''amour', 23),
+(6, 'roman industriel', 23),
+(7, 'roman policier', 23),
+(8, 'roman d''aventures', 23),
+(9, 'science-fiction', 23),
+(10, 'fantasy', 23),
+(11, 'fantastique', 23),
+(12, 'horreur', 23),
+(13, 'autobiographie', 24),
+(14, 'autofiction', 24),
+(15, 'journal intime', 24),
+(16, 'mémoires', 24),
+(17, 'chanson de geste', 26),
+(18, 'fable', 41),
+(19, 'fabliau', 41),
+(20, 'conte philosophique', 41),
+(21, 'parabole', 41),
+(22, 'prêche', 44),
+(23, 'bulle', 44),
+(24, 'encyclique', 44),
+(25, 'non-précisé', 48);
+
+--
+-- Index pour les tables exportées
+--
+
+--
+-- Index pour la table `auteur`
+--
+ALTER TABLE `auteur`
+  ADD PRIMARY KEY (`auteur_pk`),
+  ADD KEY `auteur-epoque-fk` (`auteur-epoque-fk`);
+
+--
+-- Index pour la table `epoque`
+--
+ALTER TABLE `epoque`
+  ADD PRIMARY KEY (`epoque_pk`);
+
+--
+-- Index pour la table `genre_litteraire`
+--
+ALTER TABLE `genre_litteraire`
+  ADD PRIMARY KEY (`genre_pk`);
+
+--
+-- Index pour la table `livre`
+--
+ALTER TABLE `livre`
+  ADD PRIMARY KEY (`livre_pk`),
+  ADD KEY `livre_auteur_fk` (`livre_auteur_fk`,`livre_epoque_fk`,`livre_genre_litteraire_fk`,`livre_sous_genre_litteraire_fk`,`livre_registre_litteraire_fk`),
+  ADD KEY `livre_epoque_fk` (`livre_epoque_fk`),
+  ADD KEY `livre_genre_litteraire_fk` (`livre_genre_litteraire_fk`),
+  ADD KEY `livre_sous_genre_litteraire_fk` (`livre_sous_genre_litteraire_fk`),
+  ADD KEY `livre_registre_litteraire_fk` (`livre_registre_litteraire_fk`);
+
+--
+-- Index pour la table `sous_genre_litteraire`
+--
+ALTER TABLE `sous_genre_litteraire`
+  ADD PRIMARY KEY (`sous_genre_pk`),
+  ADD KEY `sous_genre_genre_litt_fk` (`sous_genre_genre_litt_fk`);
+
+--
+-- Index pour la table `sous_registre_litteraire`
+--
+ALTER TABLE `sous_registre_litteraire`
+  ADD PRIMARY KEY (`registre_pk`),
+  ADD KEY `registre_sous_genre_fk` (`registre_sous_genre_fk`);
+
+--
+-- AUTO_INCREMENT pour les tables exportées
+--
+
+--
+-- AUTO_INCREMENT pour la table `auteur`
+--
+ALTER TABLE `auteur`
+  MODIFY `auteur_pk` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=54;
+--
+-- AUTO_INCREMENT pour la table `epoque`
+--
+ALTER TABLE `epoque`
+  MODIFY `epoque_pk` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
+--
+-- AUTO_INCREMENT pour la table `genre_litteraire`
+--
+ALTER TABLE `genre_litteraire`
+  MODIFY `genre_pk` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
+--
+-- AUTO_INCREMENT pour la table `livre`
+--
+ALTER TABLE `livre`
+  MODIFY `livre_pk` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
+--
+-- AUTO_INCREMENT pour la table `sous_genre_litteraire`
+--
+ALTER TABLE `sous_genre_litteraire`
+  MODIFY `sous_genre_pk` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=49;
+--
+-- AUTO_INCREMENT pour la table `sous_registre_litteraire`
+--
+ALTER TABLE `sous_registre_litteraire`
+  MODIFY `registre_pk` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=26;
+--
+-- Contraintes pour les tables exportées
+--
+
+--
+-- Contraintes pour la table `auteur`
+--
+ALTER TABLE `auteur`
+  ADD CONSTRAINT `auteur_ibfk_1` FOREIGN KEY (`auteur-epoque-fk`) REFERENCES `epoque` (`epoque_pk`);
+
+--
+-- Contraintes pour la table `livre`
+--
+ALTER TABLE `livre`
+  ADD CONSTRAINT `livre_ibfk_1` FOREIGN KEY (`livre_auteur_fk`) REFERENCES `auteur` (`auteur_pk`),
+  ADD CONSTRAINT `livre_ibfk_3` FOREIGN KEY (`livre_epoque_fk`) REFERENCES `epoque` (`epoque_pk`),
+  ADD CONSTRAINT `livre_ibfk_4` FOREIGN KEY (`livre_genre_litteraire_fk`) REFERENCES `genre_litteraire` (`genre_pk`),
+  ADD CONSTRAINT `livre_ibfk_5` FOREIGN KEY (`livre_sous_genre_litteraire_fk`) REFERENCES `sous_genre_litteraire` (`sous_genre_pk`),
+  ADD CONSTRAINT `livre_ibfk_6` FOREIGN KEY (`livre_registre_litteraire_fk`) REFERENCES `sous_registre_litteraire` (`registre_pk`);
+
+--
+-- Contraintes pour la table `sous_genre_litteraire`
+--
+ALTER TABLE `sous_genre_litteraire`
+  ADD CONSTRAINT `sous_genre_litteraire_ibfk_1` FOREIGN KEY (`sous_genre_genre_litt_fk`) REFERENCES `genre_litteraire` (`genre_pk`);
+
+--
+-- Contraintes pour la table `sous_registre_litteraire`
+--
+ALTER TABLE `sous_registre_litteraire`
+  ADD CONSTRAINT `sous_registre_litteraire_ibfk_1` FOREIGN KEY (`registre_sous_genre_fk`) REFERENCES `sous_genre_litteraire` (`sous_genre_pk`);
