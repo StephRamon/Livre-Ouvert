@@ -1,0 +1,39 @@
+html, body{
+height:100%;
+}
+
+body{
+font-family:verdana;
+font-size:11pt;
+}
+
+h1{
+color:#f00;
+border-bottom:1px dotted #666;
+text-align:center;
+padding-right:20px;
+}
+
+h2{
+color:#00f;
+}
+
+.rouge{
+color:#f00;
+}
+
+.majuscule{
+text-transform:uppercase;
+}
+
+label{
+display:block;
+}
+
+#table-auteur tr:nth-child(even){
+background: #f4ffff;
+}
+
+#table-auteur tr:nth-child(odd){
+background: #fff;
+}

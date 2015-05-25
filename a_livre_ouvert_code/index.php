@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<title>Biblio</title>
+	<title>À Livre Ouvert - Accueil</title>
 	<link rel="stylesheet" type="text/css" href="">
 </head>
 <body>
@@ -14,5 +14,6 @@
 ?>
 <hr>
 <a href="formulaire_recherche.php">Effectuer une recherche</a>
+<a href="formulaire_inserer_un_auteur.php">Inserer un auteur</a>
 </body>
 </html>
