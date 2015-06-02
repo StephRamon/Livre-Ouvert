@@ -1,13 +1,12 @@
 <!doctype html>
 <html lang="fr">
 <head>
-	<meta charset="utf-8">
-	<title>À Livre Ouvert - Accueil</title>
-	<link 	rel="stylesheet" 
-			type="text/css" 
-			href="style.css">
+    <meta charset="utf-8">
+    <title>Recherche d'un livre</title>
+    <link type="text/css"
+          rel="stylesheet"
+          href="style.css" />
 </head>
-
 <body>
     <div id="wrapper">
         <header id="banner">
@@ -22,8 +21,11 @@
                 ?>
             </asside>
             <section id="content">
-                <p>
-                    Site de littérature française avec textes libres de droit au format epub.
+                <h1>Chercher un livre</h1>
+                <?php
+                    include("includes/gerer_livre.php");
+                    listerResultatsLivresRechercher();
+                ?>
             </section>
 
             <div class="break_float"></div>

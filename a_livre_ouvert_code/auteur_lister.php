@@ -1,13 +1,12 @@
 <!doctype html>
 <html lang="fr">
 <head>
-	<meta charset="utf-8">
-	<title>À Livre Ouvert - Accueil</title>
-	<link 	rel="stylesheet" 
-			type="text/css" 
-			href="style.css">
+    <meta charset="utf-8">
+    <title>Liste des auteurs</title>
+    <link type="text/css"
+          rel="stylesheet"
+          href="style.css" />
 </head>
-
 <body>
     <div id="wrapper">
         <header id="banner">
@@ -22,8 +21,11 @@
                 ?>
             </asside>
             <section id="content">
-                <p>
-                    Site de littérature française avec textes libres de droit au format epub.
+                <h1>Liste des auteurs</h1>
+                <?php
+                  include("includes/gerer_auteur.php");
+                  listerTousLesAuteurs();
+                ?>
             </section>
 
             <div class="break_float"></div>
@@ -32,7 +34,7 @@
         <footer id="footer">
             <?php
                 include 'includes/footer.php';
-             ?>
+            ?>
         </footer>
     </div>
 </body>
