@@ -1,7 +1,5 @@
 <?php
 
-echo "coucou";
-
 include 'gerer_connexion_db.php';
 
 function listerResultatsLivresRechercher(){

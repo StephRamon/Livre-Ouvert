@@ -6,6 +6,16 @@
 	<link 	rel="stylesheet" 
 			type="text/css" 
 			href="style.css">
+
+    <link   rel="stylesheet" 
+            type="text/css"
+            href="css/demo.css" />
+    
+    <link   rel="stylesheet" 
+            type="text/css" 
+            href="css/component.css" />
+        
+    <script src="includes/js/modernizr-2.6.2.min.js"></script>
 </head>
 
 <body>
@@ -16,6 +26,11 @@
             ?>
         </header>
         <div id="main_content">
+            <div id="menu_circular">
+                <?php
+                    include 'includes/menu_circular.php';
+                ?>
+            </div>
             <asside id="left_menu">
                 <?php
                     include 'includes/menu_aside.php';

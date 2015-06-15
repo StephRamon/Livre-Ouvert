@@ -21,7 +21,7 @@
                 ?>
             </asside>
             <section id="content">
-                <h1>Listes des livres</h1>
+                <h1>Liste des livres</h1>
                 <?php
                   include("includes/gerer_livre.php");
                   listerTousLesLivres();

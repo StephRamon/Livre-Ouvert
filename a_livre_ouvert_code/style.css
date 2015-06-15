@@ -1,9 +1,13 @@
-html, body{
+body{
 	height: 100%;
+	width: 1600px;
+	background-image: url(images/the_open_book_ok.jpg);
+	background-repeat: repeat-y;
+	background-position: center;
+	background-color: #295354;
 }
 div#wrapper{
 	width: 100%;
 	height: 100%;
-	/*border:1px solid #ff0000;*/
-	background-image: url(images/the_open_book_ok.jpg);
+	position: center;
 }
