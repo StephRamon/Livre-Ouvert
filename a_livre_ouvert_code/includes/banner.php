@@ -1,1 +1,1 @@
-<h1>À Livre Ouvert</h1>
+<h1>Livre Ouvert</h1>
