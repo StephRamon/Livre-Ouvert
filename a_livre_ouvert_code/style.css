@@ -1,13 +1,88 @@
-body{
-	height: 100%;
-	width: 1600px;
-	background-image: url(images/the_open_book_ok.jpg);
-	background-repeat: repeat-y;
-	background-position: center;
-	background-color: #295354;
+html, body{
+	height:100%;
 }
+
+body{
+	font-family:'simplifica';
+	font-size:11pt;
+	margin:10px 0px 0px 0px;
+	background-image: url(images/the_open_book_ok.jpg);
+}
+
+.break-float{
+	clear:both;
+}
+
 div#wrapper{
-	width: 100%;
-	height: 100%;
-	position: center;
+	width:960px;
+	min-height:200px;
+	margin:auto;
+	/*border:1px solid #ff0000;*/
+}
+
+/* header */
+header#banner{
+	/*background-image:url(images/baner.jpg);*/
+	/*background-color: rgba(20, 84, 88, 0.5);*/
+	background-color: rgba(255, 255, 255, 0.5);
+	color:#145358;
+	margin: auto;
+	font-size:3em;
+	text-align:center;
+	height:150px;
+}
+
+header#banner h1{
+	margin:0px;
+	padding:10px 20px 0px 0px;
+	font-size:3em;
+}
+
+/* main_content */
+div#main-content{
+	display:table;
+	border-collapse: separate;
+}
+
+#main-content > asside,
+#main-content > section{
+	display:table-cell;
+}
+
+div#menu-horizontale{
+	line-height: 0px;
+	height: 30px;
+	background-color: rgba(128, 32, 94, 0.5);
+}
+div#menu-horizontale li{
+	font-size: 2em;
+	margin: 7px 46px;
+	display: inline;
+}
+div#menu-horizontale li:hover{
+	background-color: #801f5e;
+}
+/* left_menu */
+asside#left_menu{
+	font-size:1em;
+
+}
+
+asside#left_menu section{
+	width: 150px;
+	/*border:1px solid #ffff00;*/
+}
+
+
+/* footer */
+footer{
+	height: 30px;
+	background-color: #801f5e;
+	line-height: 30px;
+}
+
+footer#footer{
+	color:#ddd;
+	text-align:center;
+	font-size:1em;
 }
