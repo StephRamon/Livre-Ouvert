@@ -27,12 +27,12 @@
               ce nom est contenu dans la variable créée par le input text dont le name
               est search-book-title
               -->
-              <form action="livre_rechercher_genre.php"
+              <form action="livre_inserer_genre.php"
                     method="post">
-                  <label for="nationalite">Genres</label>
-                        
+                  <label for="genre">Genres</label>
                         <?php
-                            include 'includes/genre_selectionner.php'
+                            include("includes/genre_selectionner.php");
+                            selectGenres();
                         ?>
                   <br /><br />
                   <input type="submit"
