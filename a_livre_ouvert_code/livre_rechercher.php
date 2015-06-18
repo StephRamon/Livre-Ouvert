@@ -28,7 +28,7 @@
             <section id="content">
               <h1>Chercher un livre</h1>
               <!--
-              search_book.php est le script qui va recevoir le nom du livre recherché
+              livre_rechercher_resultat.php est le script qui va recevoir le nom du livre recherché
               ce nom est contenu dans la variable créée par le input text dont le name
               est search-book-title
               -->
