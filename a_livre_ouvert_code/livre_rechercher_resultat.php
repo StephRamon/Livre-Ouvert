@@ -15,6 +15,11 @@
             ?>
         </header>
         <div id="main_content">
+            <div id="menu_circular">
+                <?php
+                    include 'includes/menu_circular.php';
+                ?>
+            </div>
             <asside id="left_menu">
                 <?php
                     include 'includes/menu_aside.php';

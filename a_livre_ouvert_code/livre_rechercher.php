@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title>Biblio - Recherche d'un livre</title>
+    <title>ALO - Recherche d'un livre</title>
     <link href="style.css"
           type="text/css"
           rel="stylesheet" />
@@ -15,6 +15,11 @@
             ?>
         </header>
         <div id="main_content">
+            <div id="menu_circular">
+                <?php
+                    include 'includes/menu_circular.php';
+                ?>
+            </div>
             <asside id="left_menu">
                 <?php
                     include 'includes/menu_aside.php';

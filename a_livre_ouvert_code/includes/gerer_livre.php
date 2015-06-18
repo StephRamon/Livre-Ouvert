@@ -5,23 +5,13 @@ include 'gerer_connexion_db.php';
 function listerResultatsLivresRechercher(){
     $biblio  = openConnexionDb(); //ouverture de la db;
     if (isset ($_POST['search_book_title']) == true && empty ($_POST['search_book_title']) == false){
-        $searchBookTitle =  $_POST['search-book-title'];
+        $searchBookTitle =  $_POST['search_book_title'];
 
-        $livres = $biblio->prepare("select
-                                      livre_titre,
-                                      auteur_nom,
-                                      livre_annee,
-                                      livre_edition_fk
-                                    from
-                                      livre,
-                                      auteur
-                                    where
-                                      livre_titre like concat ('%', :titreLivre, '%')
-                                      and
-                                      auteur_pk=livre_auteur_fk");
+        $livres = $biblio->prepare("select livre_titre, auteur_nom from livre, auteur where livre_titre like concat ('%', :titreLivre, '%') and auteur_pk=livre_auteur_fk");
         $livres->execute(array('titreLivre' => $searchBookTitle));
+//echo "Jusqu'ici, tout va bien!";
 
-        echo "<p>Votre recherche est <b>".$searchBookTitle. "</b></p>";
+        echo "<p>Votre recherche est <b>".$searchBookTitle."</b></p>";
         echo "<p>Voici le résultat de votre recherche</p>";
         echo "<p><br /></p>";
         echo "<table id='resultat-recherche-livre' class='table-listing'>
@@ -46,14 +36,7 @@ function listerResultatsLivresRechercher(){
 
 function listerTousLesLivres(){
     $biblio  = openConnexionDb(); //ouverture de la db;
-    $livres = $biblio->query("select
-                                livre_titre,
-                                auteur_nom
-                              from
-                                livre,
-                                auteur
-                              where
-                                auteur_pk=livre_auteur_fk");
+    $livres = $biblio->query("select livre_titre,  auteur_nom from livre, auteur where auteur_pk=livre_auteur_fk");
 
     echo "<table id='lister-livre' class='table-listing'>
             <thead>

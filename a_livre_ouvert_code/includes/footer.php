@@ -1,1 +1,1 @@
-<p>(c) Design by Laura Genot et Stéphanie Ramon</p>
+<p>&copy; Design by Laura Genot et Stéphanie Ramon</p>

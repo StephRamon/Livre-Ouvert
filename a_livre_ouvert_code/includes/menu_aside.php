@@ -8,7 +8,7 @@
             <li><a href="genre_lister.php">Recherche par genre</a></li>
             <li><a href="epoque_lister.php">Recherche par période</a></li>
             <li><a href="livre_rechercher.php">Chercher un livre</a></li>
-            <li><a href="#">Chercher un auteur</a></li> 
+            <li><a href="auteur_rechercher.php">Chercher un auteur</a></li> 
         </ul>
 </section>
 <section>

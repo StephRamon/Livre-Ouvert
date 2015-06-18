@@ -7,7 +7,6 @@
           rel="stylesheet"
           href="style.css" />
 </head>
-
 <body>
   <div id="wrapper">
         <header id="banner">
@@ -16,6 +15,11 @@
             ?>
         </header>
         <div id="main_content">
+            <div id="menu_circular">
+                <?php
+                    include 'includes/menu_circular.php';
+                ?>
+            </div>
             <asside id="left_menu">
                 <?php
                     include 'includes/menu_aside.php';
@@ -24,51 +28,54 @@
             <section id="content">
   <form action="includes/encoder_un_auteur.php"
         method="post">
-      <label for="nom_auteur">Nom de l'auteur</label>
+      <label for="nom_auteur">Nom de l'auteur&#8239&#58;</label>
       <input type="text"
              name="nom_auteur"
              id="nom_auteur"
              size="50"
              placeholder="Nom"
              required
-             values="" />
+             value="" />
       <br /><br />
-      <label for="prenom_auteur">Prénom de l'auteur</label>
+      <label for="prenom_auteur">Prénom de l'auteur&#8239&#58;</label>
       <input type="text"
              name="prenom_auteur"
              id="prenom_auteur"
              size="50"
              placeholder="Prénom"
-             values="" />
+             value="" />
       <br /><br />
-      <label for="annee_naissance">Année de naissance</label>
-      <input type="text"
+      <label for="annee_naissance">Année de naissance&#8239&#58;</label>
+      <input type="number"
+             max="2015"
              name="annee_naissance"
              id="annee_naissance"
              size="50"
              placeholder="Année de naissance"
-             values="" />
+             value="" />
       <br /><br />
-      <label for="annee_deces">Année de décès</label>
-      <input type="text"
+      <label for="annee_deces">Année de décès&#8239&#58;</label>
+      <input type="number"
+             max="2015"
              name="annee_deces"
              id="annee_deces"
              size="50"
              placeholder="Année de décès"
-             values="" />
+             value="" />
       <br /><br />
-      <label for="sexe">Sexe</label>
+      <label for="sexe">Sexe&#8239&#58;</label>
       Masculin
       <input type="radio"
              name="sexe"
              id="sexe"
-             values="M" />
-      &nbsp;&nbsp;&nbsp;
+             value=1 
+             checked/>
+      &emsp;
       Féminin
       <input type="radio"
              name="sexe"
              id="sexe"
-             values="F" />
+             value=2 />
 
       <br /><br /><br />
       <input type="submit"

@@ -1,7 +1,5 @@
 <?php
 
-echo "coucou";
-
 try {$a_livre_ouvert = new PDO('mysql:host=localhost:8889;dbname=a_livre_ouvert;charset=utf8','root','root');}
 
 catch(Exception $e) {
