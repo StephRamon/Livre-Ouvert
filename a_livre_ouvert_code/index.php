@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<title>À Livre Ouvert - Accueil</title>
+	<title>ALO - Accueil</title>
 	<link 	rel="stylesheet" 
 			type="text/css" 
 			href="style.css">
@@ -37,8 +37,13 @@
                 ?>
             </asside>
             <section id="content">
-                <p>
-                    Site de littérature française avec textes libres de droit au format epub.
+                <h1>Site de litt&eacute;rature française avec textes libres de droits au format epub</h1>
+                <p>Les objectifs principaux de ce site sont les suivants&nbsp;:</p> 
+                <ul>
+                    <li>Vous faire d&eacute;couvrir la litt&eacute;rature française appartenant au domaine public&nbsp;;</li>
+                    <li>Vous faire d&eacute;couvrir les diff&eacute;rents genres de cette litt&eacute;rature&nbsp;;</li>
+                    <li>Mettre les textes &agrave; votre disposition&nbsp;.</li>
+                </ul>
             </section>
 
             <div class="break_float"></div>
