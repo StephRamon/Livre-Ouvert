@@ -83,22 +83,29 @@ div#menu_circular ul li a:hover{
 }
 /* left_menu */
 #left_menu{
-	width:200px;
+	display: inline-block;
+	float: left;
+	width:250px;
 	background-color:rgba(255,240,217,0.5);
 	padding:10px 5px;
 	min-height:400px;
 	font-size:0.8em;
-	float: left;
+}
+
+section{
+	border:1px solid #CCC;
+	width: 650px;
+	/*margin:10px 0px;*/
 }
 
 /*** CONTENT ***/
 #content{
-	width:400px;
 	min-height:400px;
 	background-color: #add0dc;
 	font-size:0.9em;
 	color:#5b4d3c;
 	padding:10px;
+	float: right;
 }
 
 #content h1{
@@ -115,9 +122,11 @@ div#menu_circular ul li a:hover{
 	margin:0px 4em;
 }
 /*** FOOTER ***/
-footer#footer{
+footer{
 	background-color: rgba(20, 84, 88, 0.5);
 	color:#ddd;
 	text-align:center;
 	font-size:0.8em;
 }
+
+
