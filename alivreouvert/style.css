@@ -105,7 +105,6 @@ div#menu_circular ul li a:hover{
 	display: inline-block;
 	float: left;
 	width:250px;
-<<<<<<< Updated upstream
 	background-color:rgba(255,240,217,0.5);
 	padding:10px 5px;
 	min-height:400px;
@@ -116,7 +115,6 @@ section{
 	border:1px solid #CCC;
 	width: 650px;
 	/*margin:10px 0px;*/
-=======
 	margin:45px 0px;
 	background-color: rgba(255, 129, 96, 0.6);
 	border-radius: 0px 30px 0px 30px;
@@ -127,7 +125,6 @@ section{
                 0 5px 5px rgba(0, 0, 0, .2),
                 0 10px 10px rgba(0, 0, 0, .2),
                 0 20px 20px rgba(0, 0, 0, .15);
->>>>>>> Stashed changes
 }
 
 /* section */
@@ -165,11 +162,11 @@ section{
 #content ul li{
 	margin:0px 4em;
 }
-<<<<<<< Updated upstream
+
 /*** FOOTER ***/
-=======
+
 /* footer */
->>>>>>> Stashed changes
+
 footer{
 	background-color: rgba(20, 84, 88, 0.5);
 	color:#ddd;
