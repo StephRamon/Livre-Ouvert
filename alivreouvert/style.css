@@ -62,7 +62,6 @@ div#main_content{
 
 /* menu circular */
 div#menu_circular{
-
 	width: 960px;
 	font-size: 0.7em;
 	height: 0px;
@@ -109,6 +108,10 @@ div#menu_circular ul li a:hover{
 	padding:10px 5px;
 	min-height:400px;
 	font-size:0.8em;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, .3),
+                0 5px 5px rgba(0, 0, 0, .2),
+                0 10px 10px rgba(0, 0, 0, .2),
+                0 20px 20px rgba(0, 0, 0, .15);
 }
 
 section{
@@ -163,10 +166,7 @@ section{
 	margin:0px 4em;
 }
 
-/*** FOOTER ***/
-
 /* footer */
-
 footer{
 	background-color: rgba(20, 84, 88, 0.5);
 	color:#ddd;
