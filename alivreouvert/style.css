@@ -5,8 +5,9 @@ html, body{
 body{
 	font-family:'myriad pro';
 	font-size:14pt;
-	margin:10px 0px 0px 0px;
 	background-image: url(images/the_open_book_ok.jpg);
+	background-position: center top;
+	background-repeat: repeat-y;
 }
 
 .break-float{
@@ -22,7 +23,8 @@ div#wrapper{
 
 /* header */
 header#banner{
-	/*background-image:url(images/baner.jpg);*/
+	background-image:url(images/logo.png);
+	background-repeat: no-repeat;
 	/*background-color: rgba(20, 84, 88, 0.5);*/
 	background-color: rgba(255, 255, 255, 0.5);
 	color:#145358;
@@ -81,58 +83,36 @@ div#menu_circular ul li a:hover{
 }
 /* left_menu */
 #left_menu{
-width:200px;
-padding:10px 5px;
-min-height:400px;
-font-size:0.8em;
-float: left;
-
-}
-
-#left_menu section{
-background-color:rgba(255,240,217,0.5);
-border:1px solid #CCC;
-margin:10px 0px;
-}
-
-#left_menu section header.banner{
-background-color:rgba(255,255,255,0.6);
-height:25px;
-}
-
-#left_menu section a{
-text-decoration:none;
-color:#777;
-}
-
-#left_menu section a:hover{
-text-decoration:none;
-color:#111;
+	width:200px;
+	background-color:rgba(255,240,217,0.5);
+	padding:10px 5px;
+	min-height:400px;
+	font-size:0.8em;
+	float: left;
 }
 
 /*** CONTENT ***/
 #content{
-width:400px;
-min-height:400px;
-background-color: #add0dc;
-font-size:0.9em;
-color:#5b4d3c;
-padding:10px;
-float: right;
+	width:400px;
+	min-height:400px;
+	background-color: #add0dc;
+	font-size:0.9em;
+	color:#5b4d3c;
+	padding:10px;
 }
 
 #content h1{
-color:#0a769a;
-text-align:right;
-padding-right:20px;
+	color:#0a769a;
+	text-align:right;
+	padding-right:20px;
 }
 
 #content p{
-margin:0px 2em;
+	margin:0px 2em;
 }
 
 #content ul li{
-margin:0px 4em;
+	margin:0px 4em;
 }
 /*** FOOTER ***/
 footer#footer{
