@@ -16,7 +16,6 @@
         <h2>Ajouter</h2>
     </header>
         <ul>
-            <li><a href="#">Encoder un livre</a></li>
             <li><a href="auteur_encoder.php">Encoder un auteur</a></li>
         </ul>
 </nav>

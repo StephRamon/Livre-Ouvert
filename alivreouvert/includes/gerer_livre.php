@@ -7,29 +7,13 @@ function listerResultatsLivresRechercher(){
     if (isset ($_POST['search_book_title']) == true && empty ($_POST['search_book_title']) == false){
         $searchBookTitle =  $_POST['search_book_title'];
 
-        $livres = $biblio->prepare("select livre_titre, auteur_nom from livre, auteur where livre_titre like concat ('%', :titreLivre, '%') and auteur_pk=livre_auteur_fk");
+        $livres = $biblio->prepare("SELECT livre_titre, auteur_nom from livre, auteur where livre_titre like concat ('%', :titreLivre, '%') and auteur_pk=livre_auteur_fk");
         $livres->execute(array('titreLivre' => $searchBookTitle));
 //echo "Jusqu'ici, tout va bien!";
-
-        echo "<p>Votre recherche est <b>".$searchBookTitle."</b></p>";
-        echo "<p>Voici le résultat de votre recherche</p>";
-        echo "<p><br /></p>";
-        echo "<table id='resultat-recherche-livre' class='table-listing'>
-                <thead>
-                    <tr>
-                        <th>Titre</th>
-                        <th>Auteur</th>
-                    </tr>
-                </thead>
-                <tbody>";
-        while ($livre = $livres->fetch()){
-            echo "<tr>" .
-                     "<td>" . $livre['livre_titre'] . "</td>" .
-                     "<td>" . $livre['auteur_nom'] . "</td>" .
-                 "</tr>";
+        while ($livre = $livres->fetch()){  
+        echo "<p>L'auteur du titre &#34;<b>".$livre['livre_titre']."</b>&#34; est&nbsp;<b>".$livre['auteur_nom']."</b></p>";
         };//while
-        echo "</tbody>
-              </table>";
+        
     }//if
     $biblio = null; // fermeture de la db
 }

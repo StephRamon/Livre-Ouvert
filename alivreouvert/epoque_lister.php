@@ -2,12 +2,10 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title>ALO - Recherche d'un auteur</title>
-    <link href="style.css"
-          type="text/css"
-          rel="stylesheet" />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="autocomplete.js"></script>
+    <title>Liste des auteurs</title>
+    <link type="text/css"
+          rel="stylesheet"
+          href="style.css" />
 </head>
 <body>
     <div id="wrapper">
@@ -28,16 +26,19 @@
                 ?>
             </asside>
             <section id="content">
-              <h1>Chercher un ou des titres dont l'auteur est&nbsp;:</h1>
-              <form action="auteur_rechercher_resultat.php"
+              <h1>Chercher des livres par période</h1>
+              <!--
+              search_book.php est le script qui va recevoir le nom du livre recherch&eacute;
+              ce nom est contenu dans la variable cr&eacute;&eacute;e par le input text dont le name
+              est search-book-title
+              -->
+              <form action="includes/lister_par_epoque.php"
                     method="post">
-                  <label for="nom-auteur-rechercher">Nom de l'auteur</label>
-                  <input type="text"
-                         name="search_author_name"
-                         id="recherche"
-                         size="50"
-                         placeholder="Nom de l'auteur"
-                         required values="" />
+                  <label for="epoque">Choisissez une période&#8239&#58;</label>
+                        <?php
+                            include("includes/epoque_selectionner.php");
+                            selectEpoques();
+                        ?>
                   <br /><br />
                   <input type="submit"
                          value="Lancer la recherche" />

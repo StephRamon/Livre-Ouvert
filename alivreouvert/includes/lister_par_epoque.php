@@ -4,15 +4,15 @@ include 'gerer_connexion_db.php';
 
 echo "Jusqu'ici, tout va bien!";
 
-function listerParGenre(){
+function listerParEpoque(){
     $biblio  = openConnexionDb(); //ouverture de la db;
-	$genrePk = $_POST['genrePk'];
+	$epoquePk = $_POST['epoquePk'];
 
-	$livres = $biblio->query("SELECT livre_titre, auteur_nom FROM livre, auteur, genre_litteraire WHERE livre_genre_litteraire_fk like :genre");
-	$livres->execute(array('genre' => $genrePk));
+	$livres = $biblio->query("SELECT livre_titre, auteur_nom FROM livre, auteur, epoque WHERE livre_epoque_fk like :epoque");
+	$livres->execute(array('epoque' => $epoquePk));
 
-    	echo "<p>Les livres avec un <b>".$genrePk."</b>  sont</p>";
-        echo "<table id='lister-par-genre' class='table-listing'>
+    	echo "<p>Les livres écrits durant cette époque sont</p>";
+        echo "<table id='lister-par-epoque' class='table-listing'>
                 <thead>
                     <tr>
                         <th>Titre</th>

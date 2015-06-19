@@ -2,6 +2,7 @@
 
 include 'gerer_connexion_db.php';
 
+
 function listerTousLesAuteurs(){
     $biblio  = openConnexionDb(); //ouverture de la db;
     $auteurs = $biblio->query("select * from auteur order by auteur_nom");
@@ -20,11 +21,10 @@ function listerTousLesAuteurs(){
                  "<td  class='majuscule'>" . $auteur['auteur_nom'] . "</td>" .
                  "<td>" . $auteur['auteur_prenom'] . "</td>" .
                  "</tr>";
-        }/*while*/
+        }// while
     echo "</tbody>
           </table>";
     $biblio = null; // fermeture de la db
 }
-
 
 ?>

@@ -1,1 +1,1 @@
-<p>&copy; Design by Laura Genot et Stéphanie Ramon</p>
+<p>&copy; GeRam Web Design</p>

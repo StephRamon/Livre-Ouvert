@@ -14,8 +14,6 @@
     <link   rel="stylesheet" 
             type="text/css" 
             href="css/component.css" />
-        
-    <script src="includes/js/modernizr-2.6.2.min.js"></script>
 </head>
 
 <body>
@@ -30,7 +28,7 @@
                 <?php
                     include 'includes/menu_circular.php';
                 ?>
-            </div>
+            </div> <!--menu_cirucular-->
             <asside id="left_menu">
                 <?php
                     include 'includes/menu_aside.php';
@@ -61,13 +59,13 @@
             </section>
 
             <div class="break_float"></div>
-        </div>
+        </div> <!--main_content-->
 
         <footer id="footer">
             <?php
                 include 'includes/footer.php';
              ?>
         </footer>
-    </div>
+    </div> <!--wrapper-->
 </body>
 </html>

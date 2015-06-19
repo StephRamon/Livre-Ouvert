@@ -26,15 +26,15 @@
                 ?>
             </asside>
             <section id="content">
-              <h1>Chercher un livre</h1>
+              <h1>Chercher un auteur à partir de l'un de ses titres</h1>
               <!--
-              livre_rechercher_resultat.php est le script qui va recevoir le nom du livre recherché
-              ce nom est contenu dans la variable créée par le input text dont le name
+              livre_rechercher_resultat.php est le script qui va recevoir le nom du livre recherch&eacute;
+              ce nom est contenu dans la variable cr&eacute;&eacute;e par le input text dont le name
               est search-book-title
               -->
               <form action="livre_rechercher_resultat.php"
                     method="post">
-                  <label for="titre-livre-rechercher">Titre de l'ouvrage</label>
+                  <label for="titre-livre-rechercher">écrivez le titre ci-dessous&nbsp;:</label>
                   <input type="text"
                          name="search_book_title"
                          id="titre-livre-rechercher"
