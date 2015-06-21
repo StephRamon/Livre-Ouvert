@@ -55,6 +55,8 @@
                     <p>Dans les pays de copyright, comme les États-Unis d'Am&eacute;rique, il est possible pour l'auteur de renoncer totalement &agrave; ses droits1. Dans les pays qui appliquent le droit d'auteur, comme la France, certains droits demeurent, même lorsque l'œuvre est dans le domaine public, le droit moral ne pouvant faire l'objet d'une renonciation. Certaines licences, telle la licence CC0, tentent de se rapprocher le plus possible du domaine public, en permettant de renoncer &agrave; autant de droits que le permet la loi.</p>
 
                     <p>Le domaine public f&eacute;dère de nombreuses activit&eacute;s &eacute;conomiques, bas&eacute;es notamment sur l'exploitation des œuvres de l'esprit ou des connaissances2. C'est le cas par exemple des &eacute;ditions de cr&eacute;ations litt&eacute;raires anciennes ou des m&eacute;dicaments g&eacute;n&eacute;riques (dont le brevet est venu &agrave; &eacute;ch&eacute;ance).</p>
+                    <hr>
+                    <p>Sources : https://fr.wikipedia.org/wiki/Domaine_public_%28propri%C3%A9t%C3%A9_intellectuelle%29</p>
                 </article>
             </section>
 

@@ -10,11 +10,12 @@ include 'gerer_connexion_db.php';
     $auteurDeces = $_POST["annee_deces"];
     $auteurSexe = $_POST["sexe"];
 
-    $nouvelAuteur = $biblio->prepare("insert into auteur (auteur_nom, auteur_prenom, auteur_naissance, auteur_deces) values (:nom, :prenom, :naissance, :deces)"); 
+    $nouvelAuteur = $biblio->prepare("insert into auteur (auteur_nom, auteur_prenom, auteur_sexe, auteur_naissance, auteur_deces) values (:nom, :prenom, :sexe, :naissance, :deces)"); 
 
 
-    $nouvelAuteur->execute(array('nom' => $auteurNom,
+    $nouvelAuteur->execute(array ('nom' => $auteurNom,
                                  'prenom' => $auteurPrenom,
+                                 'sexe' => $auteurSexe,
                                  'naissance' =>$auteurNaissance,
                                  'deces' => $auteurDeces));
 

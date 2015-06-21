@@ -27,11 +27,7 @@
             </asside>
             <section id="content">
               <h1>Chercher des livres par période</h1>
-              <!--
-              search_book.php est le script qui va recevoir le nom du livre recherch&eacute;
-              ce nom est contenu dans la variable cr&eacute;&eacute;e par le input text dont le name
-              est search-book-title
-              -->
+             
               <form action="includes/lister_par_epoque.php"
                     method="post">
                   <label for="epoque">Choisissez une période&#8239&#58;</label>

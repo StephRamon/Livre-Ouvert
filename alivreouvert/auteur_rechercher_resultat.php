@@ -26,7 +26,7 @@
                 ?>
             </asside>
             <section id="content">
-                <h1>Chercher le ou les titres écrit par un auteur</h1>
+                <h1>Résultat de votre recherche</h1>
                 <?php
                     include("includes/gerer_auteur_recherche.php");
                     listerResultatsAuteursRechercher();

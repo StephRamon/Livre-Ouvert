@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title>Liste des auteurs</title>
+    <title>ALO - Liste des auteurs</title>
     <link type="text/css"
           rel="stylesheet"
           href="style.css" />

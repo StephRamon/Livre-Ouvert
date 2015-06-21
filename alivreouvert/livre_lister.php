@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title>Biblio - Lister les auteurs</title>
+    <title>ALO - Liste des livres</title>
     <link type="text/css"
           rel="stylesheet"
           href="style.css" />

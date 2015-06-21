@@ -68,18 +68,18 @@
                         <input type="radio"
                                name="sexe"
                                id="sexe"
-                               value=1 
+                               value="Masculin" 
                                checked/>
                         &emsp;
                         F&eacute;minin
                         <input type="radio"
                                name="sexe"
                                id="sexe"
-                               value=2 />
+                               value="Féminin" />
 
                         <br /><br /><br />
                         <input type="submit"
-                               value="Ins&eacute;rer un auteur" />
+                               value="Insérer un auteur" />
                     </form>
               </section>
             </div> <!--main_content-->
@@ -89,9 +89,5 @@
              ?>
             </footer>
   </div> <!--wrapper-->
-</body>
-</html>
-
-<hr/>
 </body>
 </html>

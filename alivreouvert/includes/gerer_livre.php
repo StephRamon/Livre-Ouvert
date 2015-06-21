@@ -7,11 +7,12 @@ function listerResultatsLivresRechercher(){
     if (isset ($_POST['search_book_title']) == true && empty ($_POST['search_book_title']) == false){
         $searchBookTitle =  $_POST['search_book_title'];
 
-        $livres = $biblio->prepare("SELECT livre_titre, auteur_nom from livre, auteur where livre_titre like concat ('%', :titreLivre, '%') and auteur_pk=livre_auteur_fk");
+        $livres = $biblio->prepare("SELECT livre_titre, auteur_nom, livre_epub from livre, auteur where livre_titre like concat ('%', :titreLivre, '%') and auteur_pk=livre_auteur_fk");
         $livres->execute(array('titreLivre' => $searchBookTitle));
 //echo "Jusqu'ici, tout va bien!";
         while ($livre = $livres->fetch()){  
         echo "<p>L'auteur du titre &#34;<b>".$livre['livre_titre']."</b>&#34; est&nbsp;<b>".$livre['auteur_nom']."</b></p>";
+        echo "<a href=". $livre['livre_epub'].">Télécharger ce livre</a>";
         };//while
         
     }//if

@@ -26,7 +26,7 @@
                 ?>
             </asside>
             <section id="content">
-                <h1>Chercher un livre</h1>
+                <h1>Résultat de votre recherche</h1>
                 <?php
                     include("includes/gerer_livre.php");
                     listerResultatsLivresRechercher();
