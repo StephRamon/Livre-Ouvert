@@ -20,13 +20,14 @@ function listerResultatsLivresRechercher(){
 
 function listerTousLesLivres(){
     $biblio  = openConnexionDb(); //ouverture de la db;
-    $livres = $biblio->query("select livre_titre,  auteur_nom from livre, auteur where auteur_pk=livre_auteur_fk");
+    $livres = $biblio->query("select livre_titre,  auteur_nom, livre_epub from livre, auteur where auteur_pk=livre_auteur_fk");
 
     echo "<table id='lister-livre' class='table-listing'>
             <thead>
                 <tr>
                     <th>Titre</th>
                     <th>Auteur</th>
+                    <th>Fichier ePub</th>
                 </tr>
             </thead>
             <tbody>";

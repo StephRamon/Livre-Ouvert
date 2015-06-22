@@ -26,6 +26,7 @@
                 ?>
             </asside>
             <section id="content">
+              <h2>Encoder un auteur</h2>
                     <form action="includes/encoder_un_auteur.php"
                           method="post">
                         <label for="nom_auteur">Nom de l'auteur&#8239&#58;</label>

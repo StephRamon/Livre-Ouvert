@@ -112,7 +112,6 @@ div#menu_circular li:first-of-type{
 
 #bord_droit{
 	border-right: 1px solid #801f5e;
-
 }
 
 /* left_menu */
@@ -122,7 +121,6 @@ div#menu_circular li:first-of-type{
 	width:265px;
 	margin:45px 0px;
 	background-color: rgba(225, 48, 10, 0.12);
-	text-shadow: 0px 1px 0px #460441;
 	border-radius: 0px 30px 0px 30px;
 	padding:10px 5px;
 	/*min-height:400px;*/
@@ -136,6 +134,8 @@ div#menu_circular li:first-of-type{
 #left_menu h2{
 	padding-left: 20px;
 	color: #145358;
+	text-shadow: 0px 1px 0px #460441;
+
 }
 #left_menu ul{
 	padding-left: 60px;
@@ -151,7 +151,7 @@ div#menu_circular li:first-of-type{
 }
 
 #left_menu ul li a:visited{
-	color: rgba(20, 83, 88, 0.58);
+	color: #C87D63;
 }
 
 #left_menu ul li a:hover{
@@ -203,17 +203,51 @@ section{
 	margin:0px 4em;
 }
 
+#content th{
+	height: 43px;
+	line-height: 43px;
+}
+
 #content td{
 	padding: 6px 0px 6px 15px;
+	text-align: center;
+}
+
+#content form{
+	margin-left: 40px;
+	padding-top: 40px;
+}
+
+/*#content input{
+	background-color: #859F97;
+	border-radius: 5px;
+	margin-left: 150px;
+}*/
+
+#content input[type="text"]{
+	background-color: #fff;
+	border: 0px;
+	margin-left: 20px;
+}
+
+#content select{
+	border: 0 !important;.  /*Removes border*/
+     -webkit-appearance: none;  /*Removes default chrome and safari style*/
+     -moz-appearance: none;  /*Removes default style Firefox*/
+    background: url('images/arrow.png')  no-repeat;
+    background-position: 82px 7px;                /*Position of the background-image*/
+    width: 125px;                /*Width of select dropdown to give space for arrow image*/
+    text-indent: 0.01px;
+ 	text-overflow: "";
 }
 
 #content
  a{
 	color: #DEBFA4;
 	background-color: rgba(20, 83, 88, 0.72);
-	box-shadow: -webkit-box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.25);
-				-moz-box-shadow:    3px 0px 5px 0px rgba(0, 0, 0, 0.25);
-				box-shadow:         3px 0px 5px 0px rgba(0, 0, 0, 0.25);
+	box-shadow: -webkit-box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.25);
+				-moz-box-shadow:    3px 0px 3px 0px rgba(0, 0, 0, 0.25);
+				box-shadow:         3px 0px 3px 0px rgba(0, 0, 0, 0.25);
 	text-decoration: none;
 	padding: 5px;
 	margin-left: 25px;
@@ -233,6 +267,10 @@ section{
 #content a[href^="https"]{
 	color: #fff;
 	text-decoration: none;
+	background-color: rgba(20, 83, 88, 0);
+	box-shadow: -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+				-moz-box-shadow:    0px 0px 0px 0px rgba(0, 0, 0, 0);
+				box-shadow:         0px 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
 #content a[href^="https"]:hover{

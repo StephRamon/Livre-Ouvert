@@ -6,7 +6,7 @@
             <li><a href="livre_lister.php">Liste des livres</a></li>
             <li><a href="auteur_lister.php">Liste des auteurs</a></li>
             <li><a href="genre_lister.php">Recherche par genre</a></li>
-            <li><a href="epoque_lister.php">Recherche par période</a></li>
+            <!--<li><a href="epoque_lister.php">Recherche par période</a></li>-->
             <li><a href="livre_rechercher.php">Chercher par titre</a></li>
             <li><a href="auteur_rechercher.php">Chercher par auteur</a></li> 
         </ul>

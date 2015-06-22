@@ -31,7 +31,7 @@
               <h1>Chercher un ou des titres dont l'auteur est&nbsp;:</h1>
               <form action="auteur_rechercher_resultat.php"
                     method="post">
-                  <label for="nom-auteur-rechercher">Nom de l'auteur</label>
+                  <label for="nom-auteur-rechercher">Nom de l'auteur :</label>
                   <input type="text"
                          name="search_author_name"
                          id="recherche"

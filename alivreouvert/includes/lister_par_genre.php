@@ -1,15 +1,13 @@
 <!doctype html>
 <html lang="fr">
 <head>
-	<meta charset="utf-8">
-	<title>ALO - Accueil</title>
-	<link 	rel="stylesheet" 
-			type="text/css" 
-			href="style.css">
-        
-    <script src="includes/js/modernizr-2.6.2.min.js"></script>
+    <meta charset="utf-8">
+    <title>ALO - Liste par genre</title>
+    <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+    <link type="text/css"
+          rel="stylesheet"
+          href="style.css" />
 </head>
-
 <body>
     <div id="wrapper">
         <header id="banner">
@@ -29,13 +27,11 @@
                 ?>
             </asside>
             <section id="content">
-                <h1>Site de litt&eacute;rature française avec textes libres de droits au format epub</h1>
-                <p>Les objectifs principaux de ce site sont les suivants&nbsp;:</p> 
-                <ul>
-                    <li>Vous faire d&eacute;couvrir la litt&eacute;rature française appartenant au domaine public&nbsp;;</li>
-                    <li>Vous faire d&eacute;couvrir les diff&eacute;rents genres de cette litt&eacute;rature&nbsp;;</li>
-                    <li>Mettre les textes &agrave; votre disposition&nbsp;.</li>
-                </ul>
+                <h1>Résultat de votre recherche</h1>
+                <?php
+                    include("includes/gerer_genre.php");
+                    listerResultatsGenresRechercher();
+                ?>
             </section>
 
             <div class="break_float"></div>
@@ -46,6 +42,6 @@
                 include 'includes/footer.php';
              ?>
         </footer>
-    </div>
+    </div> <!--wrapper-->
 </body>
 </html>
