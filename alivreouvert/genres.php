@@ -53,12 +53,15 @@
                 <h2>Les genres narratifs</h2>
                 <p>Les genres narratifs sont caractérisés par le récit de l'enchaînement plus ou moins complexe des événements, des péripéties avec la possibilité d'en établir le schéma narratif et de définir le principe général de l'action par le schéma actanciel qui expose les différents rôles présents dans le récit. On peut également définir le statut du narrateur (ou des narrateurs), distinct(s) de l'auteur sauf mention particulière, ainsi que les points de vue narratifs choisis et la structure chronologique de l'œuvre. Polymorphes, les genres narratifs exploitent aussi bien les différents discours (direct, indirect, indirect libre) et la description (cadre spatio-temporel, portraits) que le récit proprement dit (péripéties), le commentaire ou l'expression poétique. Ils se déterminent aussi par leur longueur, leur rapport au réel et au fictionnel ainsi que par leur objet comme l'écriture de soi dans l'autobiographie.</p>
                 <h2>Les genres théâtraux</h2>
-
+                <p>Les genres théâtraux sont marqués par l'oralité et l'éphémère, par la double énonciation et la fonction du comédien et aussi par les données pratiques du spectacle. Ils sont souvent catégorisés en sous-genres plaisants (comédie) ou sérieux (tragédie).</p>
                 <h2>Les genres épistolaires</h2>
-
+                <p>Les genres épistolaires consistent en correspondance authentique où l'on rencontre aussi bien la confidence que la prise de position, et les lettres fictives, avec le cas particulier du roman par lettres (ex. Les Liaisons dangereuses) délicat à catégoriser.</p>
                 <h2>Les genres argumentatifs</h2>
-
+                <p>Ils cherchent à convaincre et à séduire en prenant parti avec des stratégies argumentatives variées incluant le traitement des thèses en présence (modalisation), le rapport entre le locuteur et le destinataire comme dans le maniement des arguments et des exemples.</p>
                 <h2>Les genres descriptifs</h2>
+                <p>Le genre est unique : la galerie de portraits. Les Caractères, de La Bruyère, accompagnés d'une visée argumentative, sont classés comme telle.</p>
+                <hr>
+                <p>Sources : <a href="https://fr.wikipedia.org/wiki/Genre_litt%C3%A9raire" target="_blank">Wikipédia - Genres littéraires</a></p>
 
             </section>
 

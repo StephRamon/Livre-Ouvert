@@ -57,7 +57,7 @@
                     
                     <hr>
 
-                    <p>Sources : https://fr.wikipedia.org/wiki/EPUB_%28format%29</p>
+                    <p>Sources : <a href="https://fr.wikipedia.org/wiki/EPUB_%28format%29" target="_blank">Wikipédia - ePub</a></p>
             </section>
 
             <div class="break_float"></div>

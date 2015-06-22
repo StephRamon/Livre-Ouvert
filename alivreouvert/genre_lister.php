@@ -2,7 +2,8 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title>Liste des auteurs</title>
+    <title>ALO - Liste par genre</title>
+    <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
     <link type="text/css"
           rel="stylesheet"
           href="style.css" />
@@ -27,32 +28,29 @@
             </asside>
             <section id="content">
               <h1>Chercher des livres par genre</h1>
-              <!--
-              search_book.php est le script qui va recevoir le nom du livre recherch&eacute;
-              ce nom est contenu dans la variable cr&eacute;&eacute;e par le input text dont le name
-              est search-book-title
-              -->
-              <form action="includes/lister_par_genre.php"
+              
+              <form action="lister_par_genre.php"
                     method="post">
                   <label for="genre">Choisissez un genre&#8239&#58;</label>
                         <?php
                             include("includes/genre_selectionner.php");
                             selectGenres();
+                           //echo "Jusqu'ici, tout va bien!";
                         ?>
                   <br /><br />
                   <input type="submit"
                          value="Lancer la recherche" />
               </form>
-            </section>
+            </section> <!--content-->
 
             <div class="break_float"></div>
-        </div>
+        </div> <!--main_content-->
 
         <footer id="footer">
             <?php
                 include 'includes/footer.php';
              ?>
         </footer>
-    </div>
+    </div> <!--wrapper-->
 </body>
 </html>

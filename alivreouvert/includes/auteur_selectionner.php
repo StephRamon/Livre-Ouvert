@@ -12,6 +12,7 @@ function selectAuteurs(){
 	while($auteur=$auteurs->fetch()){
 		echo "<option value=".$auteur[auteur_pk].">".$auteur[auteur_nom]."</option>";
 	}
-	echo "</select>";	
+	echo "</select>";
+	$biblio = null; // fermeture de la db	
 }
 ?>

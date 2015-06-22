@@ -12,6 +12,7 @@ function selectGenres(){
 	while($genre=$genres->fetch()){
 		echo "<option value=".$genre[genre_pk].">".$genre[genre_nom]."</option>";
 	}
-	echo "</select>";	
+	echo "</select>";
+	$biblio = null; // fermeture de la db	
 }
 ?>

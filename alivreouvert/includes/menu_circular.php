@@ -1,9 +1,9 @@
 <div class="component">
-				<div class="cn-wrapper" id="cn-wrapper">
+				<div>
 				    <ul>
-				      <li><a href="index.php">Accueil</a></li>
-				      <li><a href="libre.php">Domaine public</a></li>
-				      <li><a href="epub.php">ePub</a></li>
+				      <li id="bord_droit"><a href="index.php">Accueil</a></li>
+				      <li id="bord_droit"><a href="libre.php">Domaine public</a></li>
+				      <li id="bord_droit"><a href="epub.php">ePub</a></li>
 				      <li><a href="genres.php">Genres littéraires</a></li>
 				     </ul>
 				</div>

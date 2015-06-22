@@ -41,10 +41,12 @@
                                 <?php
                                     include("includes/auteur_selectionner.php");
                                     selectAuteurs();
+                                    echo "Jusqu'ici, tout va bien!";
                                 ?>
                         <br /><br />
                         <label for="genre_litteraire">Genre littéraire&#8239&#58;</label>
                                 <?php
+                                    echo "Jusqu'ici, tout va bien!";
                                     include("includes/genre_selectionner.php");
                                     selectGenres();
                                 ?>

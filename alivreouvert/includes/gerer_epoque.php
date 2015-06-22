@@ -4,14 +4,14 @@ include 'gerer_connexion_db.php';
 
 echo "Jusqu'ici, tout va bien!";
 
-function listerParEpoque(){
+function isterResultatsEpoquesRechercher(){
     $biblio  = openConnexionDb(); //ouverture de la db;
 	$epoquePk = $_POST['epoquePk'];
 
-	$livres = $biblio->query("SELECT livre_titre, auteur_nom FROM livre, auteur, epoque WHERE livre_epoque_fk like :epoque");
-	$livres->execute(array('epoque' => $epoquePk));
+	$epoquelivres = $biblio->prepare("SELECT livre_titre, auteur_nom, livre_epub FROM livre, auteur, epoque WHERE epoque_dates = :epoque");
+	$epoquelivres->execute(array('epoque' => $epoquePk));
 
-    	echo "<p>Les livres écrits durant cette époque sont</p>";
+    	echo "<p>Les livres écrits durant cette période sont</p>";
         echo "<table id='lister-par-epoque' class='table-listing'>
                 <thead>
                     <tr>
@@ -20,10 +20,10 @@ function listerParEpoque(){
                     </tr>
                 </thead>
                 <tbody>";
-        while ($livre = $livres->fetch()){
+        while ($epoquelivre = $epoquelivres->fetch()){
             echo "<tr>" .
-                     "<td>" . $livre['livre_titre'] . "</td>" .
-                     "<td>" . $livre['auteur_nom'] . "</td>" .
+                     "<td>" . $epoquelivre['livre_titre'] . "</td>" .
+                     "<td>" . $epoquelivre['auteur_nom'] . "</td>" .
                  "</tr>";
         };//while
         echo "</tbody>

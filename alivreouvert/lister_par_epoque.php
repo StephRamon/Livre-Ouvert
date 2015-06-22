@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title>Liste des auteurs</title>
+    <title>ALO - Liste par genre</title>
     <link type="text/css"
           rel="stylesheet"
           href="style.css" />
@@ -26,20 +26,11 @@
                 ?>
             </asside>
             <section id="content">
-              <h1>Chercher des livres par période</h1>
-             
-              <form action="lister_par_epoque.php"
-                    method="post">
-                  <label for="epoque">Choisissez une période&#8239&#58;</label>
-                        <?php
-                            echo "string";
-                            include("includes/epoque_selectionner.php");
-                            selectEpoques();
-                        ?>
-                  <br /><br />
-                  <input type="submit"
-                         value="Lancer la recherche" />
-              </form>
+                <h1>Résultat de votre recherche</h1>
+                <?php
+                    include("includes/gerer_epoque.php");
+                    listerResultatsEpoquesRechercher();
+                ?>
             </section>
 
             <div class="break_float"></div>
@@ -50,6 +41,6 @@
                 include 'includes/footer.php';
              ?>
         </footer>
-    </div>
+    </div> <!--wrapper-->
 </body>
 </html>

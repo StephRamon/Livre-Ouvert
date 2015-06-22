@@ -1,0 +1,170 @@
+html, body{
+	height:100%;
+}
+
+body{
+	font-family:'myriad pro';
+	font-size:14pt;
+	background-color: #145358;
+	background-image: url(images/the_open_book_ok.jpg);
+	background-position: center top;
+	background-repeat: repeat-y;
+}
+
+.break-float{
+	clear:both;
+}
+
+div#wrapper{
+	width:960px;
+	min-height:200px;
+	margin:auto;
+	/*border:1px solid #ff0000;*/
+}
+
+/* header */
+header#banner{
+	/*background-color: rgba(20, 84, 88, 0.5);*/
+	background-color: rgba(255, 255, 255, 0.5);
+	color:#145358;
+	margin: auto;
+	font-size:2em;
+	text-align:right;
+	height:200px;
+}
+
+header#banner h1{
+	margin:0px;
+	padding:70px 60px 0px 0px;
+	font-size:3em;
+}
+
+/* logo */
+#logo{
+	display: inline-block;
+	float: left;
+	background-image: url(images/logo.png);
+	width: 113px;
+	height: 150px;
+	margin: 18px 0px 0px 100px;
+}
+
+/* main_content */
+div#main_content{
+	width: 960px;
+	display:table;
+	border-collapse: separate;
+}
+
+#main_content > asside,
+#main_content > section{
+	display:table-cell;
+}
+
+/* menu circular */
+div#menu_circular{
+
+	width: 960px;
+	font-size: 0.7em;
+	height: 0px;
+	line-height: 30px;
+}
+div#menu_circular ul{
+	margin: 0px 0px 0px 0px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .3),
+                0 3px 5px rgba(0, 0, 0, .2),
+                0 5px 10px rgba(0, 0, 0, .2),
+                0 20px 20px rgba(0, 0, 0, .15);
+}
+div#menu_circular ul li{
+	border-right: 1px solid #801f5e;
+	list-style-type: none;
+	display: inline;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2em;
+}
+div#menu_circular ul li a{
+	height: 100%;
+	color: rgba(0, 0, 0, .7); 
+	text-shadow: 0 1px 0 rgba(229, 182, 148, .5);
+	text-decoration: none;
+	display: inline;
+    text-align: center;
+    color: rgba(0, 0, 0, .7); 
+}
+
+
+div#menu_circular ul li a:hover{
+	text-decoration: none;
+	color: #801f5e;
+	height: 100%;
+}
+
+/* left_menu */
+#left_menu{
+	display: inline-block;
+	float: left;
+	width:250px;
+	margin:45px 0px;
+	background-color: rgba(255, 129, 96, 0.6);
+	border-radius: 0px 30px 0px 30px;
+	padding:10px 5px;
+	min-height:400px;
+	font-size:0.8em;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, .3),
+                0 5px 5px rgba(0, 0, 0, .2),
+                0 10px 10px rgba(0, 0, 0, .2),
+                0 20px 20px rgba(0, 0, 0, .15);
+}
+
+/* section */
+section{
+	border:1px solid #DF815F;
+	border-radius: 0px 0px 100px 0px;
+	width: 650px;
+	margin:44px 0px;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, .3),
+                0 5px 5px rgba(0, 0, 0, .2),
+                0 10px 10px rgba(0, 0, 0, .2),
+                0 20px 20px rgba(0, 0, 0, .15);
+}
+
+/* content */
+#content{
+	min-height:400px;
+	background-color:rgba(255,240,217,0.5);
+	font-size:0.9em;
+	color:#5b4d3c;
+	padding:10px;
+	float: right;
+}
+
+#content h1{
+	color:#0a769a;
+	text-align:right;
+	padding-right:20px;
+}
+
+#content p{
+	margin:0px 2em;
+}
+
+#content ul li{
+	margin:0px 4em;
+}
+/* footer */
+footer{
+	background-color: rgba(20, 84, 88, 0.5);
+	color:#ddd;
+	text-align:center;
+	font-size:0.8em;
+}
+
+hr {
+    font-family: arial;
+    text-align: center;
+    font-size: 60px;
+    line-height: 1;
+    color: #145358;
+ }

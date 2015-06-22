@@ -56,7 +56,7 @@
 
                     <p>Le domaine public f&eacute;dère de nombreuses activit&eacute;s &eacute;conomiques, bas&eacute;es notamment sur l'exploitation des œuvres de l'esprit ou des connaissances2. C'est le cas par exemple des &eacute;ditions de cr&eacute;ations litt&eacute;raires anciennes ou des m&eacute;dicaments g&eacute;n&eacute;riques (dont le brevet est venu &agrave; &eacute;ch&eacute;ance).</p>
                     <hr>
-                    <p>Sources : https://fr.wikipedia.org/wiki/Domaine_public_%28propri%C3%A9t%C3%A9_intellectuelle%29</p>
+                    <p>Sources : <a href="https://fr.wikipedia.org/wiki/Domaine_public_%28propri%C3%A9t%C3%A9_intellectuelle%29" target="_blank">Wikipédia - Domaine public</a></p>
                 </article>
             </section>
 

@@ -2,8 +2,6 @@
 
 include 'gerer_connexion_db.php';
 
-
-//echo "Jusqu'ici, tout va bien!";
 function selectEpoques(){
 
 	$biblio  = openConnexionDb(); //ouverture de la db;
@@ -14,6 +12,7 @@ function selectEpoques(){
 	while($epoque=$epoques->fetch()){
 		echo "<option value=".$epoque[epoque_pk].">".$epoques[epoque_dates]."</option>";
 	}
-	echo "</select>";	
+	echo "</select>";
+	$biblio = null; // fermeture de la db
 }
 ?>
